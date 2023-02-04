@@ -1,15 +1,15 @@
-int size;
+int len;
 public void setup()
 {
   background(0);
   size(500, 500);
-  size = 500;
+  len = 500;
 }
 public void draw()
 {
   noStroke();
   background(0);
-  sierpinskiTriangle(0, 400, size);
+  sierpinskiTriangle(0, 400, len);
 }
 
 public void sierpinskiTriangle(int x, int y, int len)
@@ -28,14 +28,14 @@ public void sierpinskiTriangle(int x, int y, int len)
 
 public void keyPressed()
 {
-  if (key=='w')
+  if (key == 'w')
   {
-    if (size > 100) {
-      size -= 100;
+    if (len > 100) {
+      len -= 100;
     }
   }
-  if (key=='s')
+  if (key == 's')
   {
-    size += 100;
+    len += 100;
   }
 }
